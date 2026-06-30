@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel-guess</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌸 Guess The Number 🌸</h1>
+
+        <p class="subtitle">
+            I'm thinking of a number between <b>1 and 100</b>.
+        </p>
+
+        <input
+            type="number"
+            id="guessInput"
+            placeholder="Enter your guess"
+            min="1"
+            max="100"
+        >
+
+        <div class="buttons">
+            <button id="guessBtn">🤷‍♂️ Guess</button>
+            <button id="resetBtn">🔄 New Game</button>
+        </div>
+
+        <h2 id="message">🍀 Good Luck! 🍀</h2>
+
+        <div class="stats">
+
+            <div class="card">
+                <h3>Attempts</h3>
+                <p id="attempts">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Best Score</h3>
+                <p id="bestScore">--</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/balloons-js@0.0.3/dist/index.esm.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
